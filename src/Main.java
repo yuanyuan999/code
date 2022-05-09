@@ -1,3 +1,5 @@
+import java.math.BigInteger;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("world hello!");
@@ -21,7 +23,10 @@ public class Main {
         long bc = 2000000000;
         System.out.println(bc);
         //超长比42亿以上还要大，数字末尾要加小写l或者大写L
-        long bd = 999999999999999L;
+        long bd = 99999_99999_99999L;  //java过长的数字可以用下划线来隔开
         System.out.println(bd);
+        //超出byte值
+        BigInteger be = new BigInteger("182309_183091283_90183091283");
+        System.out.println(be);
     }
 }
