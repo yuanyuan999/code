@@ -51,12 +51,28 @@ public class Main {
         short c2 = c1;
         int c3 = c2;
         long c4 = c3;
-        float c5 =c4;
+        float c5 = c4;
         double c6 = c5;
         System.out.println(c6);
         //显示类型转换，输出-128
         int c7 = 128;
         byte c8 = (byte) c7;
         System.out.println(c8);
+        //数据类型被自动提升，需要定义一下数据类型
+        byte c9 = 105;
+        c9 = (byte) (c9 + 1);
+        System.out.println(c9);
+        int a1 = 2;
+        int a2 = 3;
+        int a3 = a1 + a2;
+        System.out.println(a3);
+        String b1 = "你好";
+        String b2 = "世界";
+        System.out.println(b1 + b2);
+        int d1 = 1;
+        int d2 = 3;
+        System.out.println(d1 + d2 + b1);   //正常输出整数相加结果
+        System.out.println(b2 + (d1 + d2)); //正常输出整数相加结果
+        System.out.println(b2 + d1 + d2);   //无法正常输出整数相加的结果
     }
 }
