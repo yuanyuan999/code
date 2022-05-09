@@ -1,3 +1,4 @@
+import java.math.BigDecimal;
 import java.math.BigInteger;
 
 public class Main {
@@ -26,7 +27,36 @@ public class Main {
         long bd = 99999_99999_99999L;  //java过长的数字可以用下划线来隔开
         System.out.println(bd);
         //超出byte值
-        BigInteger be = new BigInteger("182309_183091283_90183091283");
+        BigInteger be = new BigInteger("18230918309128390183091283");   //BigInteger不可以用下划线来隔开
         System.out.println(be);
+        //字符，单个字符
+        char bf = '中';
+        System.out.println(bf);
+        String bg = "我是一段字符串";
+        System.out.println(bg);
+        System.out.println("ni hao ");
+        char bh = 'a';
+        System.out.println((short) bh);
+        //单精度浮点型
+        float bj = (float) 1.2;
+        System.out.println(bj);
+        //双精度浮点型
+        double bk = 3.14159265358979;
+        System.out.println(bk);
+        //巨长的浮点型
+        BigDecimal bi = new BigDecimal("31231.1231231231");
+        System.out.println(bi);
+        //隐式类型转换，输出9.0
+        byte c1 = 9;
+        short c2 = c1;
+        int c3 = c2;
+        long c4 = c3;
+        float c5 =c4;
+        double c6 = c5;
+        System.out.println(c6);
+        //显示类型转换，输出-128
+        int c7 = 128;
+        byte c8 = (byte) c7;
+        System.out.println(c8);
     }
 }
