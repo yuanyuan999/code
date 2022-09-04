@@ -74,5 +74,28 @@ public class Main {
         System.out.println(d1 + d2 + b1);   //正常输出整数相加结果
         System.out.println(b2 + (d1 + d2)); //正常输出整数相加结果
         System.out.println(b2 + d1 + d2);   //无法正常输出整数相加的结果
+        int a4 = 10;
+        int a5 = 4;
+        boolean a6 = a4 > a5;
+        System.out.println(a6);             //算数运算符
+        int a7 = 10;
+        int a8 = 3;
+        boolean x1 = a7 > a8 && a8 < a7;
+        System.out.println(x1);
+        boolean x2 = a7 > a8 && a8 > a7;
+        System.out.println(x2);
+        boolean x3 = a7 > a8 || a8 > a7;
+        System.out.println(x3);
+        boolean x4 = a7 < a8 || a8 > a7;
+        System.out.println(x4);
+        boolean x5 = !(a7 > a8);
+        System.out.println(x5);
+        boolean x6 = !(a8 > a7);
+        System.out.println(x6);
+        int a10 = 7 , b3 = 14;
+        System.out.println(a10 | b3);
+        int q1 = 4, q2 = 3;
+        String str = q1 > q2 ? "行" : "不行";
+        System.out.println("汉堡做的行不行？" + str);
     }
 }
